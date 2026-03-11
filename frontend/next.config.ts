@@ -1,13 +1,12 @@
 import type { NextConfig } from "next";
 
 const nextConfig: NextConfig = {
-  output: 'export',
+  output: 'export',        // ← Обязательно для GitHub Pages!
   images: {
-    unoptimized: true,
+    unoptimized: true,     // ← Обязательно!
   },
-  // Если сайт будет в подпапке (username.github.io/flowwowsitepr/)
-  // basePath: '/flowwowsitepr',
-  // assetPrefix: '/flowwowsitepr',
+  // Если сайт будет по адресу: username.github.io/flowwowsitepr/
+  basePath: '/flowwowsitepr',  // ← Имя вашего репозитория
 };
 
 export default nextConfig;
